@@ -25,6 +25,16 @@ public class Vehicle {
     private int numberOfPassengers;
     private int cargoCapacity;
 
+    // Constructor using all 6 private fields
+    public Vehicle(String model, int cargoCapacity, int numberOfPassengers, int fuelCapacity, int topSpeed, String color) {
+        this.model = model;
+        this.cargoCapacity = cargoCapacity;
+        this.numberOfPassengers = numberOfPassengers;
+        this.fuelCapacity = fuelCapacity;
+        this.topSpeed = topSpeed;
+        this.color = color;
+    }
+
     // Getters and setters: public, so they are inherited by every child
     // class and can be called on a Moped, a Car, a SemiTruck or a Hovercraft
     public String getModel() {

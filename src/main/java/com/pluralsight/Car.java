@@ -11,6 +11,12 @@ public class Car extends Vehicle {
     // Only a car has this, so it lives here and not in Vehicle
     private int numberOfDoors;
 
+    // Constructor the calls unique field and uses super constructor
+    public Car(String model, int cargoCapacity, int numberOfPassengers, int fuelCapacity, int topSpeed, String color, int numberOfDoors) {
+        super(model, cargoCapacity, numberOfPassengers, fuelCapacity, topSpeed, color);
+        this.numberOfDoors = numberOfDoors;
+    }
+
     public int getNumberOfDoors() {
         return numberOfDoors;
     }

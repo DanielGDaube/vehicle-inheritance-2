@@ -11,6 +11,12 @@ public class Hovercraft extends Vehicle {
     // Only a hovercraft has this, so it lives here and not in Vehicle
     private int airCushionPressure;
 
+    // Constructor the calls unique field and uses super constructor
+    public Hovercraft(String model, int cargoCapacity, int numberOfPassengers, int fuelCapacity, int topSpeed, String color, int airCushionPressure) {
+        super(model, cargoCapacity, numberOfPassengers, fuelCapacity, topSpeed, color);
+        this.airCushionPressure = airCushionPressure;
+    }
+
     public int getAirCushionPressure() {
         return airCushionPressure;
     }

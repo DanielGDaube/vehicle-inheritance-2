@@ -11,6 +11,12 @@ public class SemiTruck extends Vehicle {
     // Only a semi truck has this, so it lives here and not in Vehicle
     private int numberOfTrailers;
 
+    // Constructor the calls unique field and uses super constructor
+    public SemiTruck(String model, int cargoCapacity, int numberOfPassengers, int fuelCapacity, int topSpeed, String color, int numberOfTrailers) {
+        super(model, cargoCapacity, numberOfPassengers, fuelCapacity, topSpeed, color);
+        this.numberOfTrailers = numberOfTrailers;
+    }
+
     public int getNumberOfTrailers() {
         return numberOfTrailers;
     }

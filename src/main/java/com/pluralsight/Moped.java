@@ -12,6 +12,12 @@ public class Moped extends Vehicle {
     // Only a moped has this, so it lives here and not in Vehicle
     private int maxWeight;
 
+    // Constructor the calls unique field and uses super constructor
+    public Moped(String model, int cargoCapacity, int numberOfPassengers, int fuelCapacity, int topSpeed, String color, int maxWeight) {
+        super(model, cargoCapacity, numberOfPassengers, fuelCapacity, topSpeed, color);
+        this.maxWeight = maxWeight;
+    }
+
     public int getMaxWeight() {
         return maxWeight;
     }
